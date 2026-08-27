@@ -1,1 +1,88 @@
-📌Project overview 🎯Business problem 📊Key questions 🛠️Tools used 🧹Data cleaning 🔎Analysis 📉Dashboard 💡Key Insights ✅Conclusion
+📌Project overview 
+An end-to-end retail vendor performance analysis project. The project analyses vendor sales, purchases, profitability, freight costs, and inventory-related performance to identify business opportunities and support data-driven decision-making.
+
+🎯Business problem 
+A retail business works with multiple vendors and needs to understand which vendors contribute the most to sales and profitability while also identifying vendors with low margins and higher costs.
+The goal of this project is to analyze vendor performance and provide actionable insights that can help improve profitability, purchasing decisions, and vendor management.
+
+📊Key questions 
+-Which vendors generate the highest sales?
+-Which vendors generate the highest gross profit?
+-Which vendors have the lowest profit margins?
+-What is the relationship between sales and purchase values?
+-Which vendors have the highest freight costs?
+-How does inventory vary across stores?
+-Which vendors may require further investigation or optimization?
+
+🛠️Tools used 
+Python
+Visual Studio Code
+Python libraries: panda, numpy, os
+                  
+
+🧹Data cleaning 
+The retail datasets were cleaned and prepared using Python and Pandas.
+Key data preparation steps included:
+-Inspecting dataset structure and data types
+-Handling missing values
+-Converting date columns to appropriate date formats
+-Checking duplicate records
+-Validating numerical columns
+-Checking inconsistent vendor information
+-Preparing datasets for PostgreSQL analysis and Power BI
+
+The original datasets are not included in this repository because of their large size.
+
+Source Datasets
+The project uses:
+-begin_inventory.csv
+-end_inventory.csv
+-purchase_prices.csv
+-purchases.csv
+-sales.csv
+-vendor_invoices.csv
+This project analyzes retail sales, purchases, inventory, vendor pricing and vendor invoice data to evaluate vendor performance and identify business insights.
+Tables:
+- begin_inventory: Beginning inventory by store/product
+- end_inventory: Ending inventory by store/product
+- purchases: Purchase transactions from vendors
+- purchase_prices: Product-level vendor purchase pricing
+- sales: Sales transactions
+- vendor_invoice: Vendor invoice and payment information
+
+🔎Analysis 
+The cleaned data was analyzed using Python and PostgreSQL.
+The analysis focused on:
+-Vendor purchase performance
+-Vendor sales performance
+-Gross profit
+-Profit margin
+-Sales-to-purchase ratio
+-Freight costs
+Python visualizations were created using Matplotlib and Seaborn, while SQL queries were used to perform vendor-level and business analysis in PostgreSQL.
+
+📉Dashboard 
+The final analysis was presented in an interactive Power BI Vendor Performance Dashboard.
+Dashboard KPIs
+-KPI	Value
+-Total Sales	    $459.68M
+-Total Purchases	$321.90M
+-Gross Profit	    $137.78M
+-Profit Margin   	29.97%
+
+Dashboard Visuals:
+-Top Vendors by Sales
+-Top Vendors by Gross Profit
+-Bottom 10 Vendors by Profit Margin
+-Top Vendors by Freight Cost
+-Key Insights
+
+💡Key Insights 
+-DIAGEO NORTH AMERICA INC was the top vendor by sales, generating approximately $68.74M in sales and $17.78M in gross profit.
+-CONSTELLATION BRANDS INC achieved a 36.35% profit margin among the major vendors analyzed.
+-SOUTHERN GLAZERS W&S OF NE showed an unusually high 99.29% profit margin, which may require further investigation due to its comparatively low recorded purchase value.
+-Freight costs for many major vendors were approximately 0.5% of purchase dollars.
+-Vendor-level analysis helps identify both high-performing suppliers and vendors with potential profitability or cost concerns.
+
+✅Conclusion
+This project demonstrates an end-to-end Data Analytics workflow, from data cleaning and exploratory analysis to SQL-based analysis and Power BI visualization. The analysis provides a consolidated view of vendor performance and highlights opportunities related to sales growth, profitability, purchasing, freight costs, and vendor management.
